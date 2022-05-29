@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="br.edu.ifce.myapplication.MainFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/first_fragment">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_MaiorMenorFragment"
+            app:destination="@id/MaiorMenorFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_DescontoFragment"
+            app:destination="@id/DescontoFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_VogalFragment"
+            app:destination="@id/Vogal" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_TabuadaFragment"
+            app:destination="@id/Tabuada" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="br.edu.ifce.myapplication.IMCFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/second_fragment">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/MaiorMenorFragment"
+        android:name="br.edu.ifce.myapplication.MaiorMenor"
+        android:label="Maior e menor"
+        tools:layout="@layout/maior_menor_fragment">
+
+        <action
+            android:id="@+id/action_MaiorMenorFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/DescontoFragment"
+        android:name="br.edu.ifce.myapplication.Desconto"
+        android:label="Desconto"
+        tools:layout="@layout/desconto_fragment">
+
+        <action
+            android:id="@+id/action_DescontoFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment"/>
+    </fragment>
+
+     <fragment
+        android:id="@+id/Vogal"
+        android:name="br.edu.ifce.myapplication.Vogal"
+        android:label="Vogal"
+        tools:layout="@layout/vogal_fragment">
+
+        <action
+            android:id="@+id/action_VogalFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/Tabuada"
+        android:name="br.edu.ifce.myapplication.Tabuada"
+        android:label="Vogal"
+        tools:layout="@layout/tabuada">
+
+        <action
+            android:id="@+id/action_TabuadaFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment"/>
+    </fragment>
+
+</navigation>

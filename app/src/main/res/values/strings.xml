@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">App</string>
+    <string name="second_fragment_label">Calculadora IMC</string>
+
+    <string name="calcular">Calcular</string>
+    <string name="calcularIMC">Calcular IMC</string>
+    <string name="voltar">Voltar</string>
+
+    <string name="hintAltura">Digite a altura</string>
+    <string name="hintPeso">Digite o peso</string>
+
+    <string name="titulo">IMC</string>
+    <string name="tv_height">Altura</string>
+    <string name="tv_weight">Peso</string>
+    <string name="resultado">Resultado</string>
+
+
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
